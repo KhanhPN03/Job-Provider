@@ -205,8 +205,8 @@ If you find any bugs, please create an issue with detailed information about:
 ## 📞 Contact
 
 **Author**: Pham Nam Khanh  
-**Email**: [your-email@example.com]  
-**Project**: Job Provider - SWP391
+**Email**: [khanhpn31@@gmail.com]  
+**Project**: Job Provider
 
 ---
 
