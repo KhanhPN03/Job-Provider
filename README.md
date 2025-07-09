@@ -1,7 +1,6 @@
 # 🚀 Job Provider - Online Recruitment Platform
 
 <div align="center">
-  <img src="web/images/the bee.png" alt="Job Provider Logo" width="200"/>
   
   [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
   [![JSP](https://img.shields.io/badge/JSP-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/technologies/jspt.html)
