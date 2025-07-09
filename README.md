@@ -168,13 +168,6 @@ The project uses modern, responsive design with:
 - Professional color scheme
 - Optimized UX/UI for each user type
 
-## 📸 Screenshots
-
-<div align="center">
-  <img src="web/images/carousel1.png" alt="Homepage" width="300"/>
-  <img src="web/images/carousel2.png" alt="Job Listing" width="300"/>
-  <img src="web/images/carousel3.png" alt="Admin Dashboard" width="300"/>
-</div>
 
 ## 🚀 Outstanding Features
 
