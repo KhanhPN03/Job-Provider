@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="listofjob.css">
+    <link rel="stylesheet" href="../Tool/css_bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">        
+    </div>
+    <div class="slogen_swrapper">
+        <i class='bx bx-pulse'></i>
+        <div class="slogen_swrapper-content">
+            <h3>PROVIDE THE BEST JOB</h3>
+            <span>ProJob</span>
+        </div>
+    </div>
+    <section class="listOfJob container" style="padding: 0;">
+        <div class="listOfJobLeft">
+            <div class="listOfJobLeftCategory">
+                <div class="d-flex flex-wrap">
+                    <div style="width: fit-content;"
+                     class="mt-4 mt-md-0 justify-content-start filter-category-left">                 
+                      <ul name="category" class="category">
+                        <li>Category</li>
+                        <li value="area"><i class='bx bx-map-alt'></i><span>Area</span></li>
+                        <li value="sector""><i class='bx bxs-analyse'></i><span>Sector</span></li>
+                        <li value="time"><i class='bx bxs-time' ></i><span>Working hours</span></li>
+                        <li value="salary"><i class='bx bx-money' ></i><span>Salary</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="filter-category-wrapper d-none d-md-flex align-items-center ">
+                        <!--control-->      
+                        <button id="leftBtnFilter"><i class='bx bx-chevron-left'></i></button>
+                        <!--end control-->
+                        <ul class="filter-category d-flex list-unstyled">      
+                    
+                        </ul>
+                    
+                        <button id="rightBtnFilter"><i class='bx bx-chevron-right' ></i></button>                                      
+                        </div>
+                        <div class="listOfJobLeftPostWrapper mt-4" style="padding: 10px;">
+                            <div class="row listOfJobLeftPost">
+                                ...
+                            </div>
+                            <!--pagination-->
+                            <div id="comp-control" class="d-flex pagi-control justify-content-center align-items-center mt-2">
+                                <button id="btnLeftPagination"><i class='bx bx-chevron-left'></i></button>
+                                <p class="mb-0 ms-1 me-1"><span id="currentPageTag"></span> / <span id="totalPage">??</span> pages</p>
+                                <button id="btnRightPagination"><i class='bx bx-chevron-right'></i></button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>               
+            </div>
+            <div class="listOfJobLeftPost"></div>
+        </div>       
+    </section>
+
+    <!--<img class="bannerAds" src="images/we-are-hiring-job-vacancy-square-banner-social-media-post-template/2feb4.jpg" alt="" class="ads">-->
+    <footer class="footer">
+        
+    </footer>
+</body>
+<script src="listofjob.js"></script>
+<script src="../Tool/js_bootstrap.bundle.min.js"></script>
+</html>

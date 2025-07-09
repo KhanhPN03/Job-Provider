@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 29, 2023, 11:46:52 PM
+    Author     : admin
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F4F4F4;
+    
+}
+.role {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.container{
+    margin: auto;
+    padding: 4rem;
+}
+
+a {
+    text-decoration: none; 
+    color: #212529;
+    transition: 0.1s ease-in;
+}
+
+a:hover {
+    color: #212529;
+    opacity: 0.6;
+}

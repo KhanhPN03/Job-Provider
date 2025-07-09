@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #7163ba;
+}
+body {   
+    overflow: auto;
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 107px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.4s linear;
+    background-color: var(--main-color);
+}
+.logo{
+    height: 15px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;    
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0 18px 0;
+    border-radius: 8px;
+    padding: 13px;
+    transition: all .5s ease;
+}
+.menu li:hover, .active{
+    background-color: #e0e0e058;
+}
+.sidebar:hover{
+    width: 240px;    
+    transition-delay: .3s;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+/* main content _______________________________________*/
+.mainContent{
+   background-color: #dadada;
+   width: 100%;
+   padding: 17px 10px;
+}
+.mainContentTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: white;
+    border-radius: 10px;
+}
+.contentTopLeft{
+    margin: 15px;
+    align-self: center;
+}
+.contentTopLeft span{
+    font-size: 15px;
+    color: var(--main-color);
+}
+.contentTopLeft p{
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.contentTopRight{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.contentRightInput{
+    background-color: #ececec;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;  
+}
+.contentRightInput input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-right: 10px;
+} 
+.wrapperInputColor{
+    outline: 1px solid var(--main-color);
+}  
+.contentRightInput i{
+    color: var(--main-color);
+}
+.contentTopRight img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mainContentCenter{
+    margin-top: 17px;
+    background-color: white;
+    padding: 15px 29px 15px 29px;
+    border-radius: 10px;
+}
+.mainContentCenterWrapper p:first-child{ 
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.mainContentCenterWrapper p:last-child{ 
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.card-wrapper{
+    transition: .5s ease all;
+    cursor: pointer;    
+}
+.card-wrapper:hover {
+    transform: translateY(-10px);
+    transition: .5s ease all;    
+}
+.card {   
+    transition: .5s ease all;
+}
+.card:hover{
+    outline: 1px solid var(--main-color);
+    transition: .5s ease all;
+}
+.mainContentBottom{
+    background-color: white;
+    margin-top: 17px;
+    border-radius: 15px;
+    padding: 15px;
+}
+.mainContentBottom p{
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.table thead th{
+    background-color: var(--main-color);
+    color: white;
+}

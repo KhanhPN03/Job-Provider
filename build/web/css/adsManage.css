@@ -1,0 +1,258 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.content__body__post,
+.content__body__post_1 {
+    margin-top: 24px;
+    width: 100%;
+    background: #fff;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt-auto {
+    margin: auto 0;
+}
+
+ul, li {
+    list-style-type: none;
+    border-radius: 4px;
+}
+
+.f-right {
+    float: right;
+}
+
+.mainContentBody {
+    margin-top: 20px;
+}
+
+.company-img {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 4px;
+    object-fit: cover;
+}
+
+.content__body__comp {
+    margin: auto;
+    padding: 10px 35px;
+    text-align: left;
+}
+
+.content__body__post::-webkit-scrollbar {
+    display: none;
+}
+
+.content__body__post {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.content__body__action {
+    margin: auto;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content__body__action a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+    padding: 4px 8px;
+    background: linear-gradient(to bottom, #3f0771 0%, rgb(91, 2, 132) 100%);
+
+    border-radius: 4px;
+}
+
+.content__body__action a i {
+    padding: 0 4px;
+}
+
+.subnav .item ul {
+    /* display: flex; */
+    width: fit-content;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.subnav .item {
+    animation: nav_open .7s linear;
+}
+
+.edit_btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: nav_open .7s linear;
+}
+
+.content__body__action ul {
+    padding-left: 0;
+}
+
+.content__body__action .subnav ul li {
+    padding-bottom: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+
+
+}
+
+.nav_swift {
+    display: flex;
+
+}
+
+.subnav {
+    height: 100%;
+    margin: auto 4px;
+    transition: .5s;
+}
+
+
+.subnav ul li a {
+    display: block;
+    width: 100%;
+    background: transparent;
+    height: 32px;
+}
+
+.action-item li {
+    background: linear-gradient(to bottom, #3f0771 0%, rgb(91, 2, 132) 100%);
+
+}
+
+.action-item li:hover {
+    background: linear-gradient(to bottom, #3f0274 0%, rgb(146, 20, 205) 100%);
+
+}
+
+.page_limit {
+    font-size: 20px;
+}
+
+.page_limit select {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    background: linear-gradient(to bottom, #9c9c9c 0%, #111 100%);
+}
+
+#tab_filter_text {
+    height: 25px;
+    width: 200px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#tab_filter_btn {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.body_fil {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .content__body__action .nav:hover .subnav { */
+/* visibility: visible; */
+/* cursor: pointer; */
+/* } */
+
+.hide {
+    display: none !important;
+}
+
+.open {
+    display: inline-block;
+
+
+}
+
+.active {
+    background: linear-gradient(to bottom, #3f0771 0%, rgb(91, 2, 132) 100%);
+}
+
+/* responsive */
+
+.content__body__comp.col-6,
+.content__body__comp.col-6>h5 {
+    font-size: 16px;
+}
+
+.content__body__action_m {
+    font-size: 30px;
+    transform: translateX(95%);
+    color: black;
+}
+
+/* pagina */
+
+
+.pagina {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.index_btn button {
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 15px;
+    background: linear-gradient(to bottom, #3f0771 0%, rgb(91, 2, 132) 100%);
+    border: 4px;
+    border-radius: 5px;
+}
+
+button.active,
+button:hover {
+    background: linear-gradient(to bottom, #500e8a 0%, rgb(115, 5, 166) 100%);
+
+}
+
+@keyframes nav_open {
+    from {
+        /* left: -200px; */
+        opacity: 0;
+    }
+
+    to {
+        /* left: 50px; */
+        opacity: 1;
+    }
+}
+
+@keyframes nav_close {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

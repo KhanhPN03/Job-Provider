@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Sigmar+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-item: rgb(224, 219, 219);
+    --color-active: rgb(211, 116, 132);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;   
+    height: 100vh;
+    z-index: 0;
+}
+.header{
+    height: 60px;
+    background-color: pink;
+}
+
+.filter-category-wrapper{
+    position: relative;     
+    height: fit-content;   
+}
+.filter-category-wrapper button{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-item);
+}
+.filter-category-wrapper button:nth-child(1){
+    margin-left: 10px;   
+}
+#rightBtnFilter{
+    position: absolute;   
+    right: 0;
+}
+.filter-category{   
+    margin: 0 10px;
+    scroll-behavior: smooth;
+    transition: .5s all ease;
+    overflow: hidden;    
+}
+.filter-category_item{
+    background-color: var(--color-item);
+    color: grey;
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    min-width: fit-content;
+    cursor: pointer;
+    border: 3px solid var(--color-item);
+    background-color: white; 
+}
+.filter-category li:last-child{
+    margin-right: 0;
+}
+.filter-category li:first-child{
+    margin-left: 0;
+}
+.filter-category-left{
+    position: relative;   
+    margin-right: 20px;
+}
+.active{
+    color: white;    
+    background-color: var(--color-active);
+}
+.filter-category-left .category{
+    padding: 5px 10px 5px 40px;
+    border-radius: 10px;
+    background-color: rgb(227, 227, 227);
+    border: none;
+    outline: none;
+    color: grey;
+    font-weight: 400;
+    font-size: 19px; 
+    width: 200px;    
+}
+.filter-category-left .category li{
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(117, 116, 116);
+}
+.filter-category-left .category li:hover{
+    color: black;
+}
+.filter .container-custom {
+    padding: 0 15em;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;    
+}
+.filter-category-left .category li:first-child{
+    pointer-events: none;
+    opacity: 1;
+    font-weight: bold; 
+    font-size: 20px;   
+}
+.container{
+    padding: 0 64px;
+}
+
+.slogen{    
+    padding: 20px 50px;
+}
+.slogen_swrapper{
+    display: flex;
+    margin-top: 30px;
+}
+.slogen_swrapper-content {
+    position: relative;
+    margin-left: 10px;
+}
+.slogen_swrapper-content span{
+    position: absolute;
+    font-family: 'Island Moments', cursive;
+    font-size: 30px;
+    transform: translateY(-15px);
+}
+.slogen_swrapper i {
+    font-size: 50px;    
+}
+
+
+.card-body-img {
+    width: 100%;
+    height: 145px;
+    margin: auto;
+}
+.card-body-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.blog_item{
+    transition: .3s all;
+    transition-delay: .1s;
+}
+.bog_item-content{
+    transition: .3s all;
+    transition-delay: .4s;
+    padding-top: 6px;
+}
+.card-day{
+position: absolute;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all;
+    transition-delay: .4s;
+}
+.blog_item .card-body{
+    padding: 8px;
+}
+.blogItemImage{
+    text-align: center;
+}
+.bog_item-content .card-title{
+    margin: 0;
+    font-size: 18px;
+}
+.bog_item-content .card-text{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.cardFooter{
+    font-size: 13px;
+    margin: 6px 0 10px 6px;
+}
+.cardCity{
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: var(--color-active);
+    color: white;
+    margin-right: 1.5%;
+}
+.cardSalary{
+    border: 1px solid pink;
+    border-radius: 5px;  
+    padding: 3px; 
+    background-color: var(--color-active);
+    color: white;
+}
+
+.blog{
+    margin: 30px 0 30px 0;
+}
+.blog-wrap_item{
+    padding: 0 5px;  
+    cursor: pointer;    
+    overflow: hidden;
+}
+#comp-control button{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    outline: none; 
+    border: 1px solid var(--color-item);   
+}
+/*list of jobs_______________________________*/
+.listOfJob{
+    margin-top: 30px; 
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-active);
+}
+.bannerAds{
+    position: fixed;
+    width: 250px;
+    height: 400px;
+    object-fit: fill;
+    z-index: 1;
+    right: 2%;
+    top: 15%;
+}

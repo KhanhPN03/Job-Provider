@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Sigmar+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-item: rgb(224, 219, 219);
+    --color-active: rgb(211, 116, 132);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    z-index: 0; 
+}
+.navbar-header h2 a {
+    font-family: 'Island Moments', cursive;
+    font-size: 34px;
+    color: white;
+}
+.navbar-nav .nav-item:last-child a{
+    position: relative;
+}
+.nav-item a {
+    color: var(--color-item);
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-item a:hover {
+    color: white;
+}
+.profileList{
+    position: absolute;
+    list-style: none;
+    z-index: 3;
+    right: 3.5%;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 140px;
+}
+.profileItem{
+    margin-bottom: 10px;
+}
+.profileItem a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.profileItem button{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: pink;
+    color: white;
+}
+.profileList .profileItem:last-child a {
+    display: flex;
+    align-items: center;
+}
+.profileList .profileItem:last-child a i{
+    margin-left: 10px;
+    transform: translateY(2px);
+}
+.navbar-header h2 a:hover{
+    color: whitesmoke;
+}
+.navbar-form {
+}
+.formInputWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.overlay{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.formFilterInput1, .formFilterInput2, .formFilterInput3{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 0 15px;
+    margin-left: 10px;
+    position: relative;   
+    padding: 4px 0;   
+    width: 195px;  
+}
+.formFilterInput2{
+    display: flex;
+    justify-content: start;
+}
+
+.formFilterInput1 p, .formFilterInput2 p, .formFilterInput3 p{
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.formFilterInput1 i:first-child, .formFilterInput2 i:first-child, .formFilterInput3 i:first-child{
+    margin-left: 5px;
+}
+.formFilterInput1 i:last-child, .formFilterInput2 i:last-child, .formFilterInput3 i:last-child{
+    font-size: 29px;
+    margin-left: 30px;
+}
+.formFilterInput2 i:last-child{
+    /* margin-left: 50%; */
+}
+.formFilterInputRight1, .formFilterInputRight2, .formFilterInputRight3{
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer;
+    z-index: 2;
+    width: 25%;
+}
+.formFilterInputList1, .formFilterInputList2, .formFilterInputList3{
+    background-color: white;
+    list-style: none;
+    z-index: 2;
+    border-radius: 5px;
+    width: 170px;
+    height: 250px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    margin-top: 3px;
+}
+.hide{
+    display: none;
+}
+.formFilterInputList1::-webkit-scrollbar, .formFilterInputList2::-webkit-scrollbar, .formFilterInputList3::-webkit-scrollbar{
+    width: 5px;
+}
+.formFilterInputList1::-webkit-scrollbar-track, .formFilterInputList2::-webkit-scrollbar-track, .formFilterInputList3::-webkit-scrollbar-track{
+    background-color: grey;
+}
+.formFilterInputList1::-webkit-scrollbar-thumb, .formFilterInputList2::-webkit-scrollbar-thumb, .formFilterInputList3::-webkit-scrollbar-thumb{
+    background-color: pink;
+}
+
+.formFilterInputItem1, .formFilterInputItem2, .formFilterInputItem3{
+    text-align: left;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.formFilterInputItem1:hover, .formFilterInputItem2:hover, .formFilterInputItem3:hover{
+    color: pink;
+    font-weight: 600;
+}
+.navbar-form input {
+    width: 100%;
+    padding-right: 30px;
+}
+.formInputWrapper i {
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+}
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.slogen{
+    padding: 20px 50px;
+}
+.slogen_swrapper{
+    display: flex;
+}
+.slogen_swrapper-content {
+    position: relative;
+    margin-left: 10px;
+}
+.slogen_swrapper-content span{
+    position: absolute;
+    font-family: 'Island Moments', cursive;
+    font-size: 30px;
+    transform: translateY(-15px);
+}
+.slogen_swrapper i {
+    font-size: 50px;
+}
+.filter-category-wrapper{
+    position: relative;
+}
+.filter-category-wrapper button{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-item);
+}
+.filter-category-wrapper button:nth-child(1){
+    margin-left: 10px;
+}
+#rightBtnFilter{
+    position: absolute;
+    right: 0;
+}
+.filter-category{
+    margin: 0 10px;
+    scroll-behavior: smooth;
+    transition: .5s all ease;
+    overflow: hidden;
+}
+.filter-category_item{
+    background-color: var(--color-item);
+    color: grey;
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    min-width: fit-content;
+    cursor: pointer;
+    border: 3px solid var(--color-item);
+    background-color: white;
+}
+.filter-category li:last-child{
+    margin-right: 0;
+}
+.filter-category li:first-child{
+    margin-left: 0;
+}
+.filter-category-left{
+    position: relative;
+}
+.active{
+    color: white;
+    background-color: var(--color-active);
+}
+.filter-category-left i{
+    font-size: 24px;
+    position: absolute;
+    left: 15px;
+}
+.filter-category-left #category{
+    padding: 5px 10px 5px 40px;
+    border-radius: 10px;
+    background-color: var(--color-item);
+    border: none;
+    outline: none;
+    color: grey;
+    font-weight: 400;
+    font-size: 19px;
+    width: 15.5em;
+}
+.filter .container-custom {
+    padding: 0 15em;
+}
+.blog{
+    margin: 30px 0 30px 0;
+}
+.blog-wrap_item{
+    padding: 0 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.company {
+    max-width: 240px;
+    height: 250px;
+}
+.card-body-img {
+    width: 100%;
+    height: 145px;
+    margin: auto;
+}
+.card-body-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.blog_item{
+    transition: .3s all;
+    transition-delay: .1s;
+}
+.bog_item-content{
+    transition: .3s all;
+    transition-delay: .4s;
+    padding-top: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.bog_item-content
+.card-day{
+    position: absolute;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all;
+    transition-delay: .4s;
+}
+.blog_item .card-body{
+    padding: 8px;
+}
+.blogItemImage{
+    text-align: center;
+}
+.bog_item-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.bog_item-content .card-title{
+    margin: 0;
+    font-size: 18px;     
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.bog_item-content .card-text{
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.cardFooter{
+    font-size: 13px;
+    margin: 6px 0 10px 6px;
+}
+.cardCity{
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: var(--color-active);
+    color: white;
+    margin-right: 1.5%;
+}
+.cardSalary{
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: var(--color-active);
+    color: white;
+}
+.container-custom{
+    padding: 0 15em;
+}
+.comp-list_card {
+    scroll-behavior: smooth;
+    position: relative;
+    overflow: hidden;
+}
+.card-title{
+    font-size: 23px;
+    cursor: pointer;
+}
+.card{
+    transition: .2s;
+    position: relative;
+}
+.outstading-wrapper_list_item:hover{
+    outline: 2px solid var(--color-active);
+    transition: .2s;
+    transition-delay: .2s;
+    transform: translateY(-10px);
+}
+.comp{
+    padding: 20px 15em;
+    margin-bottom: 10px;
+}
+.comp .comp-title{
+    color: grey;
+}
+#comp-control button{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    outline: none;
+    border: 1px solid var(--color-item);
+}
+.ads {
+    width: 100vw;
+    height: 18.75em;
+    margin-bottom: 30px;
+}
+.ads img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-wrapper{
+    padding: 0 20px;
+}
+.card-title {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.outstading-wrapper h3{
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Aldrich';
+}
+.outstading-wrapper{
+    background-color: grey;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+footer {
+    margin-top: 30px;
+    background-color: #340303;
+    color: white;
+    padding: 30px 0;
+}
+.about p{
+    font-weight: 500;
+}
+.link-wrapper a{
+    text-decoration: none;
+    color: var(--color-item);
+}
+.footer-leftContent{
+    transform: translate(30%, 10%);
+}
+.footer-leftContent p{
+    font-family: 'Sigmar One';
+    margin-bottom: 10px;
+}
+@media  screen and (max-width: 1200px) {
+    .container-custom{
+        padding: 0 5em;
+    }
+    .filter .container-custom {
+        padding: 0 5.8em;
+    }
+}
+@media  screen and (max-width: 576px) {
+    .footer-leftContent{
+        transform: translate(-1%,4%);
+    }
+}
+.disabled, .disabled i {
+    pointer-events: none;
+    opacity: .5;
+}
+
+
+.find-loca {
+
+}
+
+.listSearch {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(9, 1, 17);
+    top: 45px;
+    width: 100%;
+    transition-delay:.3s ;
+}
+.listSearch li a{
+    text-decoration: none;
+    color: pink;
+}
+.listSearch li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.listSearch{
+    padding: 15px ;
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.listSearch::-webkit-scrollbar{
+    width: 10px;
+}
+.listSearch::-webkit-scrollbar-thumb{
+    height: 10px;
+    background-color: palevioletred;
+    color: blueviolet;
+}
+.listSearch::-webkit-scrollbar-track{
+    background-color: grey;
+}
+.formSearchButton{
+    border: none;
+    outline: none;
+    border-radius: 5px;    
+}
+
+.formFilterInputItem1>input {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
